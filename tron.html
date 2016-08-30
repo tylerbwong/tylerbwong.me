@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta id="colorChange" name="theme-color" content="#80DEEA"/>
+
+      <!-- MOBILE -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+      <!-- TABBAR -->
+      <title>Tron - Tyler Wong</title>
+      <link rel="icon" href="images/me.ico">
+
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   </head>
+
+   <body>
+      <div class="content">
+         <nav class="transparent z-depth-0" role="navigation">
+            <ul id="slide-out" class="side-nav">
+               <li><a class="blue-grey-text" href="TylerWongResume.pdf">RESUME</a></li>
+               <li><a class="blue-grey-text" href="mailto:tbwong3@gmail.com">CONTACT</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large" style="left: 20px"><i class="blue-grey-text mdi-navigation-menu"></i></a>
+
+            <div class="nav-wrapper container">
+               <a id="logo-container" href="index.html" class="brand-logo blue-grey-text">TYLER WONG</a>
+
+               <ul class="right hide-on-med-and-down">
+                  <li><a class="blue-grey-text" href="TylerWongResume.pdf">RESUME</a></li>
+                  <li>
+                     <a class="blue-grey-text modal-trigger" href="#webmodal">CONTACT</a>
+                     <div id="webmodal" class="modal">
+                        <div class="modal-content">
+                           <h5 id="modalContent">Contact Information</h5>
+                           <div class="blue-grey-text">
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail: tbwong3@gmail.com</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell: (818)-437-9931</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addr: 1717 Spooner Drive San Luis Obispo, CA 93405</p>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <a id="modalClose" href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+
+         <!-- TRON -->
+         <div class="center">
+            <img src="images/tron.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h2 class="center">Tron</h2>
+               <h5 class="center"><i>Apr 2015</i></h5>
+               <p class="center grey-text text-darken-3 lighten-3">A very simple implementation of Tron using an HTML5 canvas. Try not to hit yourself or the walls! High scores are recorded on a weekly basis using Google's Firebase Realtime Database and Chart.js.</p>
+               <p class="center grey-text text-darken-3 lighten-3">Press <i>Space</i> to play!</p>
+            </div>
+         </div>
+         <div class="center">
+            <canvas id="myCanvas" width="800" height="600" style="border:2px solid #607D8B;"></canvas>
+         </div>
+         <br></br>
+         <h5 id="highScores" class="container blue-grey-text">WEEKLY HIGH SCORES</h5>
+         <h5 id="currentWeek" class="container blue-grey-text"></h5>
+         <div class="center container">
+            <canvas id="resultGraph" width="200" height="100"></canvas>
+         </div>
+
+         <!-- FIXED ACTION BUTTON -->
+         <div class="fixed-action-btn" style="bottom: 20px; right: 24px;">
+            <a id="button" class="btn-floating btn-large cyan lighten-3">
+               <i class="large material-icons">add</i>
+            </a>
+            <ul>
+               <li><a id="facebook" href="https://www.facebook.com/tylerbwong" class="btn-floating red lighten-3"><img class="moveimage" height="24" width="24" src="images/facebook.png"/></a></li>
+               <li><a id="instagram" href="https://instagram.com/tylerbwong" class="btn-floating yellow lighten-3"><img class="moveimage" height="24" width="24" src="images/instagram.png"/></a></li>
+               <li><a id="github" href="https://github.com/tylerbwong" class="btn-floating green lighten-3"><img class="moveimage" height="24" width="24" src="images/github.png"/></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- SCRIPTS -->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="js/Chart.js"></script>
+      <script src="js/troncolor.js"></script>
+      <script src="js/linegraph.js"></script>
+      <script src="js/firebase.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/smoothscroll.js"></script>
+      <script src="js/init.js"></script>
+      <script src="js/tron.js"></script>
+   </body>
+
+</html>

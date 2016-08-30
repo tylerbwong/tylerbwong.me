@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="theme-color" content="#E57373"/>
+
+      <!-- MOBILE -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+      <!-- TABBAR -->
+      <title>Pokébase Android Application - Tyler Wong</title>
+      <link rel="icon" href="images/me.ico">
+
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   </head>
+
+   <body>
+      <div class="content">
+         <nav class="red lighten-2 z-depth-0" role="navigation">
+            <ul id="slide-out" class="side-nav">
+               <li><a class="blue-grey-text" href="TylerWongResume.pdf">RESUME</a></li>
+               <li><a class="blue-grey-text" href="mailto:tbwong3@gmail.com">CONTACT</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large" style="left: 20px"><i class="white-text mdi-navigation-menu"></i></a>
+
+            <div class="nav-wrapper container">
+               <a id="logo-container" href="index.html" class="brand-logo white-text">TYLER WONG</a>
+
+               <ul class="right hide-on-med-and-down">
+                  <li><a class="white-text" href="TylerWongResume.pdf">RESUME</a></li>
+                  <li>
+                     <a class="white-text modal-trigger" href="#webmodal">CONTACT</a>
+                     <div id="webmodal" class="modal">
+                        <div class="modal-content">
+                           <h5 class="blue-grey-text">Contact Information</h5>
+                           <div class="blue-grey-text">
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail: tbwong3@gmail.com</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell: (818)-437-9931</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addr: 1717 Spooner Drive San Luis Obispo, CA 93405</p>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <a id="modalClose" href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+
+         <div class="center">
+            <img src="images/showcasepokebasesmall.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h2 class="center">Pokébase Android Application</h2>
+               <h5 class="center"><i>May 2016</i></h5>
+               <p class="center grey-text text-darken-3 lighten-3">Gotta catch 'em all! Pokébase for Android is an application that allows you to see information about all 721 Pokémon! Using Google Cloud Platform running App Engine with Cloud SQL, I developed this application for an introductory database class along with fellow classmate Brittany Berlanga. <a class="smoothScroll" href="#update">See the new update as of July 2016!</a>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/pokecreate.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Make Your Own Account</h4>
+               <p class="grey-text text-darken-3 lighten-3">Users can create their own account and will be automatically be added to the database.</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/pokesearch.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Search the Database for Any of the 721 Pokémon</h4>
+               <p class="grey-text text-darken-3 lighten-3">Using Endpoints with Google Cloud Platform, the application calls custom API methods to query Pokémon by Region and/or Type.</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/pokeprofile.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>See Pokémon Profiles in an Instant</h4>
+               <p class="grey-text text-darken-3 lighten-3">Data such as type, region, height, weight, base experience, and move sets can be queried from the database as well.</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/poketeam.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Create Teams to Keep Track of Your Pokémon</h4>
+               <p class="grey-text text-darken-3 lighten-3">Users can add customized teams to the database to keep track of their own Pokémon.</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/pokeedit.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Customize Pokémon Stats</h4>
+               <p class="grey-text text-darken-3 lighten-3">Give your Pokémon a nickname, level, and customize what moves they know.</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/pokemultiteams.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Easily View All of Your Created Teams</h4>
+               <p class="grey-text text-darken-3 lighten-3">Users are given an easy to use Recycler View to see all of their teams and add new ones.</p>
+            </div>
+         </div>
+
+         <a name="update"><br></br></a>
+         <!-- UPDATE -->
+         <div class="center">
+            <img src="images/showcasepokebaseupdate.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h2 class="center">Pokébase Update</h2>
+               <h5 class="center"><i>July 2016</i></h5>
+               <p class="center grey-text text-darken-3 lighten-3">Completely localized the application, making the transition over to a SQLite database. Rewrote the back-end database connector and also implemented some major UI overhauls including a new Pokémon profile page as well as new animations. Pokébase is now available on <a href="https://github.com/tylerbwong/Pokebase-SQLite"><b>GitHub</b></a>!</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/profileupdate.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Completely Revamped Pokémon Profile Page</h4>
+               <p class="grey-text text-darken-3 lighten-3">Now with new animations, easily view more information about all 721 Pokémon! Play Pokémon cries and easily switch between the previous and next Pokémon as well.</p>
+            </div>
+         </div>
+         <div class="center parallax-container">
+            <img width="281" height="500" src="images/teamupdate.png">
+         </div>
+         <div class="section white">
+            <div class="row container">
+               <h4>Redesigned Pokémon Team View</h4>
+               <p class="grey-text text-darken-3 lighten-3">Newly designed Pokémon team view with new animations and small UI tweaks.</p>
+            </div>
+         </div>
+
+         <!-- FIXED ACTION BUTTON -->
+         <div class="fixed-action-btn" style="bottom: 20px; right: 24px;">
+            <a id="button" class="btn-floating btn-large red lighten-2">
+               <i class="large material-icons">add</i>
+            </a>
+            <ul>
+               <li><a id="facebook" href="https://www.facebook.com/tylerbwong" class="btn-floating red lighten-3"><img class="moveimage" height="24" width="24" src="images/facebook.png"/></a></li>
+               <li><a id="instagram" href="https://instagram.com/tylerbwong" class="btn-floating yellow lighten-3"><img class="moveimage" height="24" width="24" src="images/instagram.png"/></a></li>
+               <li><a id="github" href="https://github.com/tylerbwong" class="btn-floating green lighten-3"><img class="moveimage" height="24" width="24" src="images/github.png"/></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- SCRIPTS -->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="js/main.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/color.js"></script>
+      <script src="js/smoothscroll.js"></script>
+      <script src="js/init.js"></script>
+   </body>
+
+</html>
