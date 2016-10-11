@@ -81,8 +81,8 @@ function makeTron() {
 
 function drawTron() {
    var newTron = makeTron();
-   console.log("Tron: " + newTron.x + " " + newTron.y);
-   console.log("History: " + history[newTron.x][newTron.y]);
+   //  console.log("Tron: " + newTron.x + " " + newTron.y);
+   //  console.log("History: " + history[newTron.x][newTron.y]);
 
    if (tron.indexOf(newTron) == -1)
       tron.push(newTron);
@@ -114,11 +114,11 @@ function collisionDetection() {
    var currentRect = {
       x: posX,
       y: posY,
-      width: squareDim, 
+      width: squareDim,
       height: squareDim
    };
 
-   if (currentRect.x < 0 || currentRect.x > canvas.width - squareRad || 
+   if (currentRect.x < 0 || currentRect.x > canvas.width - squareRad ||
          currentRect.y < 0 || currentRect.y > canvas.height - squareRad)
       reset();
 

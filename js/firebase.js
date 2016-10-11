@@ -10,7 +10,7 @@ firebase.on("value", function(snapshot) {
       var cur = scoreEntry.child("score").val();
 
       if (cur > topScores[scoreEntry.child("day").val()])
-         topScores[scoreEntry.child("day").val()] = cur;   
+         topScores[scoreEntry.child("day").val()] = cur;
    });
    createChart(topScores);
 
@@ -22,15 +22,14 @@ var getTopScores = function() {
    return topScores;
 };
 
-var sendMessage = function(sender, email, message) {
-   var newMessage = firebase.child("messages").push();
+var checkRefreshScores = function() {
+   var day = new Date().getDay();
+   var hours = new Date().getHours();
 
-   newMessage.set({
-      sender: sender,
-      email: email,
-      messasge: message
-   });
-};
+   if (day === 0 && hours > 0 && hours < 1) {
+      firebase.child("scores").remove();
+   }
+}
 
 var addScore = function(score) {
    var newScore = firebase.child("scores").push();
@@ -40,3 +39,5 @@ var addScore = function(score) {
       day: day
    });
 };
+
+checkRefreshScores()
