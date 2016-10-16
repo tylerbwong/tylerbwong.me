@@ -4,7 +4,7 @@
 
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta id="colorChange" name="theme-color" content="#80DEEA"/>
+      <meta id="colorChange" name="theme-color"/>
 
       <!-- MOBILE -->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -15,6 +15,7 @@
 
       <!-- CSS  -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css">
       <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -84,80 +85,76 @@
          <h5 class="container blue-grey-text">PROJECTS</h5>
          <br></br>
          <div class="container">
-            <div class="row">
-                <!-- POKEBASE ANDROID -->
-                <div class="col s6 m6 l6">
-                   <div class="card">
-                      <div class="card-image waves-effect waves-block waves-light">
-                         <img class="activator" src="images/showcasepokebase.png">
-                      </div>
-                      <div class="card-content">
-                         <span class="card-title activator grey-text text-darken-4">Pokébase Android Application<i class="material-icons right">more_vert</i></span>
-                         <p><a id="poke" href="https://github.com/tylerbwong/Pokebase-SQLite" class="cyan-text text-lighten-3"><b><i>View on GitHub</i></b></a></p>
-                      </div>
-                      <div class="card-reveal">
-                         <span class="card-title grey-text text-darken-4">Pokébase Android App<i class="material-icons right">close</i></span>
-                         <i>Apr 2016 - Present</i>
-                         <p>Gotta catch 'em all! Pokébase for Android is an application that allows you to see information about all 721 Pokémon! Using Google Cloud Platform running App Engine with Cloud SQL, I developed this application for an introductory database class along with fellow classmate Brittany Berlanga. Recently localized application using a SQLite database.</p>
-                         <a id="learnproject1" href="pokebase.html"><b><i>Learn more</i></b></a>
-                      </div>
-                   </div>
-                </div>
-                <!-- TRON -->
-                <div class="col s6 m6 l6">
-                   <div class="card">
-                      <div class="card-image waves-effect waves-block waves-light">
-                         <img class="activator" src="images/showcasetron.png">
-                      </div>
-                      <div class="card-content">
-                         <span class="card-title activator grey-text text-darken-4">Tron.js<i class="material-icons right">more_vert</i></span>
-                         <p><a id="tron" href="./tron.html" class="cyan-text text-lighten-3"><b><i>Play now!</i></b></a></p>
-                      </div>
-                      <div class="card-reveal">
-                         <span class="card-title grey-text text-darken-4">Tron.js<i class="material-icons right">close</i></span>
-                         <i>May 2016</i>
-                         <p>A traditional game of tron written in Javascript with HTML canvas! Supports live high scores displayed through Chart.js and a Firebase backend. Putting in the Konami code on this page will bring up a link to play! (hint: up, up, down, down, left, right, left, right, b, a)</p>
-                         <a id="learnproject1" href="tron.html"><b><i>Play now!</i></b></a>
-                      </div>
-                   </div>
-                </div>
+            <!-- POKEBASE ANDROID -->
+            <div class="col s6 m6 l6">
+              <div class="card">
+                 <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/showcasepokebase.png">
+                 </div>
+                 <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Pokébase Android Application<i class="material-icons right">more_vert</i></span>
+                    <p><a id="poke" href="https://github.com/tylerbwong/Pokebase-SQLite"><b><i>View on GitHub</i></b></a></p>
+                 </div>
+                 <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Pokébase Android App<i class="material-icons right">close</i></span>
+                    <i>Apr 2016 - Present</i>
+                    <p>Gotta catch 'em all! Pokébase for Android is an application that allows you to see information about all 721 Pokémon! Using Google Cloud Platform running App Engine with Cloud SQL, I developed this application for an introductory database class along with fellow classmate Brittany Berlanga. Recently localized application using a SQLite database.</p>
+                    <a id="learnproject1" href="pokebase.html"><b><i>Learn more</i></b></a>
+                 </div>
               </div>
-              <div class="row">
-               <!-- WHODONEDIDIT -->
-               <div class="col s6 m6 l6">
-                  <div class="card">
-                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/showcasewhodonedidit.png">
-                     </div>
-                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Who Done Did It?<i class="material-icons right">more_vert</i></span>
-                        <p><a id="progress" href="./projects/WhoDoneDidIt_v2.2.jar" class="cyan-text text-lighten-3" download><b><i>Download JAR</i></b></a></p>
-                     </div>
-                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Who Done Did It?<i class="material-icons right">close</i></span>
-                        <i>Oct – Dec 2015</i>
-                        <p>This product will enable users to play the "Who Done Did It?" card game through a computer interface that allows offline play as well as server-connected play with up to 5 players. With the continued rise of multiplayer online games, traditional card games have yet to make a shift from playing in-person to playing through a computer interface. This product will allow fans of this traditional card game to play against others online, breaking the barriers of in-person play. As the lead UI designer, implemented a Swing GUI in Java for an online multiplayer game based on the original card game Clue and had a hand in implementation of backend game logic modules in a 6 membered team.</p>
+            </div>
+            <!-- TRON -->
+            <div class="col s6 m6 l6">
+              <div class="card">
+                 <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/showcasetron.png">
+                 </div>
+                 <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Tron.js<i class="material-icons right">more_vert</i></span>
+                    <p><a id="tron" href="./tron.html"><b><i>Play now!</i></b></a></p>
+                 </div>
+                 <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Tron.js<i class="material-icons right">close</i></span>
+                    <i>May 2016</i>
+                    <p>A traditional game of tron written in Javascript with HTML canvas! Supports live high scores displayed through Chart.js and a Firebase backend. Putting in the Konami code on this page will bring up a link to play! (hint: up, up, down, down, left, right, left, right, b, a)</p>
+                    <a id="learnproject2" href="tron.html"><b><i>Play now!</i></b></a>
+                 </div>
+              </div>
+            </div>
+            <!-- WHODONEDIDIT -->
+            <div class="col s6 m6 l6">
+               <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator" src="images/showcasewhodonedidit.png">
+                  </div>
+                  <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Who Done Did It?<i class="material-icons right">more_vert</i></span>
+                     <p><a id="whodonedidit" href="./projects/WhoDoneDidIt_v2.2.jar" download><b><i>Download JAR</i></b></a></p>
+                  </div>
+                  <div class="card-reveal">
+                     <span class="card-title grey-text text-darken-4">Who Done Did It?<i class="material-icons right">close</i></span>
+                     <i>Oct – Dec 2015</i>
+                     <p>This product will enable users to play the "Who Done Did It?" card game through a computer interface that allows offline play as well as server-connected play with up to 5 players. With the continued rise of multiplayer online games, traditional card games have yet to make a shift from playing in-person to playing through a computer interface. This product will allow fans of this traditional card game to play against others online, breaking the barriers of in-person play. As the lead UI designer, implemented a Swing GUI in Java for an online multiplayer game based on the original card game Clue and had a hand in implementation of backend game logic modules in a 6 membered team.</p>
 
-                        <a id="learnproject1" href="whodonedidit.html"><b><i>Learn more</i></b></a>
-                     </div>
+                     <a id="learnproject3" href="whodonedidit.html"><b><i>Learn more</i></b></a>
                   </div>
                </div>
-               <!-- EPICSLO ANDROID -->
-               <div class="col s6 m6 l6">
-                  <div class="card">
-                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/showcaseepicsmall.png">
-                     </div>
-                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">EPIC SLO Android App<i class="material-icons right">more_vert</i></span>
-                        <p><a id="epic" href="https://github.com/tylerbwong/EPICSLO" class="cyan-text text-lighten-3" download><b><i>View on GitHub</i></b></a></p>
-                     </div>
-                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">EPIC SLO Android App<i class="material-icons right">close</i></span>
-                        <i>Apr 2016 - Present</i>
-                        <p>Win. Build. Send. A ministry based in San Luis Obispo focused on winning students for Christ, building them up based on His word, and sending them out into the field. I developed this application for an on campus ministry EPIC using in Java, to learn Android App Development.</p>
-                        <a id="learnproject1" href="epicslo.html"><b><i>Learn more</i></b></a>
-                     </div>
+            </div>
+            <!-- EPICSLO ANDROID -->
+            <div class="col s6 m6 l6">
+               <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator" src="images/showcaseepicsmall.png">
+                  </div>
+                  <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">EPIC SLO Android App<i class="material-icons right">more_vert</i></span>
+                     <p><a id="epic" href="https://github.com/tylerbwong/EPICSLO"><b><i>View on GitHub</i></b></a></p>
+                  </div>
+                  <div class="card-reveal">
+                     <span class="card-title grey-text text-darken-4">EPIC SLO Android App<i class="material-icons right">close</i></span>
+                     <i>Apr - May 2016</i>
+                     <p>Win. Build. Send. A ministry based in San Luis Obispo focused on winning students for Christ, building them up based on His word, and sending them out into the field. I developed this application for an on campus ministry EPIC using in Java, to learn Android App Development.</p>
+                     <a id="learnproject4" href="epicslo.html"><b><i>Learn more</i></b></a>
                   </div>
                </div>
             </div>
@@ -175,6 +172,7 @@
             <img class="col" height="96" width="96" src="images/css.png">
             <img class="col" height="96" width="96" src="images/javascript.png">
             <img class="col" height="96" width="96" src="images/python.png">
+            <img class="col" height="96" width="96" style="margin-left:15px;" src="images/swift.png">
          </div>
 
          <br></br>
@@ -186,8 +184,6 @@
             <img class="col" height="85" width="85" src="images/intellij.png">
             <img class="col" height="80" width="100" src="images/sketch.png">
             <img class="col" height="80" width="80" src="images/android.png">
-            <img class="col" height="90" width="90" src="images/terminal.png">
-            <img class="col" height="90" width="90" src="images/vim.png">
          </div>
 
          <br></br>

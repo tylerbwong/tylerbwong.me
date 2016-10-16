@@ -51,12 +51,14 @@ function changeColor() {
    document.getElementById("colorChange").content = color;
    document.getElementById("hi").className = "center " + textColor;
    document.getElementById("button").className = "btn-floating btn-large " + compColor;
-   // document.getElementById("progress").className = textColor;
    document.getElementById("learnproject1").className = textColor;
    document.getElementById("learnproject2").className = textColor;
+   document.getElementById("learnproject3").className = textColor;
+   document.getElementById("learnproject4").className = textColor;
+   document.getElementById("epic").className = textColor;
+   document.getElementById("whodonedidit").className = textColor;
    document.getElementById("tron").className = textColor;
    document.getElementById("poke").className = textColor;
-   // document.getElementById("modalContent").className = textColor;
    document.getElementById("modalClose").className = "modal-action modal-close waves-effect btn-flat " + textColor;
    return color;
 }

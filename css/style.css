@@ -1,21 +1,8 @@
-@font-face {
-    font-family: 'gotham_lightregular';
-    src: url('../font/gotham/gotham-light-webfont.eot');
-    src: url('../font/gotham/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/gotham/gotham-light-webfont.woff2') format('woff2'),
-         url('../font/gotham/gotham-light-webfont.woff') format('woff'),
-         url('../font/gotham/gotham-light-webfont.ttf') format('truetype'),
-         url('../font/gotham/gotham-light-webfont.svg#gotham_lightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 html, body {
    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
-   font-family: gotham_lightregular;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .moveimage {
