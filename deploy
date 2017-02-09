@@ -1,12 +1,11 @@
 #!/bin/bash
 commit_message=$1
 
-echo "Staging files for commit"
 git add .
 git commit -m "$commit_message"
-echo "Pushing to GitHub"
+echo "===== Pushing to GitHub ====="
 git push
-echo "Deploying client to Firebase"
+echo "===== Deploying client to Firebase ====="
 firebase deploy
-echo "Deploying server to Heroku"
+echo "===== Deploying server to Heroku ====="
 git subtree push --prefix server heroku master
