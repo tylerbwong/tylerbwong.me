@@ -1,0 +1,27 @@
+{
+  "name": "tylerbwong.me",
+  "version": "1.0.0",
+  "description": "A server for tylerbwong.me",
+  "engines": {
+    "node": "6.8.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.14.1",
+    "firebase": "3.6.9",
+    "node-schedule": "1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylerbwong/tylerbwong.me-server"
+  },
+  "keywords": [
+    "express",
+    "firebase",
+    "node-schedule"
+  ],
+  "license": "MIT"
+}
