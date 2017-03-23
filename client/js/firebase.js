@@ -1,9 +1,9 @@
-var firebase = new Firebase("https://tylerbwong.firebaseio.com/");
+var database = firebase.database();
 var today = new Date();
 var day = today.getDay();
 var topScores = [0, 0, 0, 0, 0, 0, 0];
 
-firebase.on("value", function(snapshot) {
+database.ref().on('value', function(snapshot) {
    var changed = snapshot.child('scores');
    topScores = [0, 0, 0, 0, 0, 0, 0];
 
@@ -24,7 +24,7 @@ var getTopScores = function() {
 };
 
 var addScore = function(score) {
-   var newScore = firebase.child('scores').push();
+   var newScore = database.ref().child('scores').push();
 
    newScore.set({
       score: score,

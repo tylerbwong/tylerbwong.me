@@ -91,8 +91,18 @@
       </div>
 
       <!-- SCRIPTS -->
+      <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+      <script>
+         var config = {
+            apiKey: "AIzaSyBszH0klANdW4oMs7ZJliuelrZRGQAaZ8E",
+            authDomain: "tylerbwong.firebaseapp.com",
+            databaseURL: "https://tylerbwong.firebaseio.com",
+            storageBucket: "project-487087514826703431.appspot.com",
+            messagingSenderId: "833773361693"
+         };
+         firebase.initializeApp(config);
+      </script>
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
       <script src="js/vendor/modernizr-2.6.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
       <script src="js/Chart.js"></script>
