@@ -2,7 +2,7 @@ var canvas = document.getElementById("myCanvas");
 var context = canvas.getContext("2d");
 
 var color = getColor();
-var fontArial = "24px Roboto";
+var fontArial = "24px Source Sans Pro, sans-serif";
 
 var state = 0;
 var currentState = 0;
