@@ -7,5 +7,3 @@ echo "===== Pushing to GitHub ====="
 git push
 echo "===== Deploying client to Firebase ====="
 firebase deploy
-echo "===== Deploying server to Heroku ====="
-git subtree push --prefix server heroku master

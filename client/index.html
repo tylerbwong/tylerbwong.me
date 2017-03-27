@@ -1,217 +1,356 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta id="colorChange" name="theme-color"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#009688" />
 
-      <!-- MOBILE -->
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <!-- MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 
-      <!-- TABBAR -->
-      <title>Tyler Wong</title>
-      <link rel="icon" href="images/me.ico">
+    <!-- TABBAR -->
+    <title>Tyler Wong</title>
+    <link rel="icon" href="images/me.ico">
 
-      <!-- CSS  -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-   </head>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
 
-   <body>
-      <!-- PRELOADER -->
-      <div>
-         <div id="loader-wrapper">
-         <div id="loader"></div>
-         <div class="loader-section section-left"></div>
-         <div class="loader-section section-right"></div>
-         </div>
-      </div>
-
-      <div class="content">
-         <nav class="transparent z-depth-0" role="navigation">
-            <ul id="slide-out" class="side-nav">
-               <li><a class="blue-grey-text smoothScroll" href="#projects">PROJECTS</a></li>
-               <li><a class="blue-grey-text smoothScroll" href="#skills">SKILLS</a></li>
-               <li><a class="blue-grey-text" href="TylerWongResume.pdf">RESUME</a></li>
-               <li><a class="blue-grey-text" href="mailto:tbwong3@gmail.com">CONTACT</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large" style="left: 20px"><i class="blue-grey-text mdi-navigation-menu"></i></a>
-
+<body>
+    <div class="content">
+        <nav class="transparent z-depth-0" role="navigation">
             <div class="nav-wrapper container">
-               <a id="logo-container" href="index.html" class="brand-logo blue-grey-text">TYLER WONG</a>
+                <a id="logo-container" href="index.html" class="brand-logo black-text">Tyler Wong</a>
 
-               <ul class="right hide-on-med-and-down">
-                  <li id="tronLabel"><a class="blue-grey-text" href="tron.html">TRON</a></li>
-                  <li><a class="blue-grey-text smoothScroll" href="#projects">PROJECTS</a></li>
-                  <li><a class="blue-grey-text smoothScroll" href="#skills">SKILLS</a></li>
-                  <li><a class="blue-grey-text" href="TylerWongResume.pdf">RESUME</a></li>
-                  <li>
-                     <a class="blue-grey-text modal-trigger" href="#webmodal">CONTACT</a>
-                     <div id="webmodal" class="modal">
-                        <div class="modal-content">
-                           <h5 class="blue-grey-text">Contact Information</h5>
-                           <div class="blue-grey-text">
-                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail: tbwong3@gmail.com</p>
-                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell: (818)-437-9931</p>
-                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addr: 1717 Spooner Drive San Luis Obispo, CA 93405</p>
-                           </div>
-                        </div>
-                        <div class="modal-footer">
-                           <a id="modalClose" href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="black-text smoothScroll" href="#skills">Skills</a></li>
+                    <li><a class="black-text smoothScroll" href="#projects">Projects</a></li>
+                    <li><a class="black-text" href="blog.html">Blog</a></li>
+                    <li><a class="black-text" href="files/TylerWongResume.pdf">Resume</a></li>
+                </ul>
             </div>
-         </nav>
+        </nav>
 
-         <!-- CONTENT -->
-         <br></br>
-         <div class="center">
+        <!-- CONTENT -->
+        <br></br>
+        <br></br>
+
+        <div class="container center">
             <img height="200" width="200" src="images/me.png">
-         </div>
-         <h1 id="hi" class="center cyan-text text-lighten-3">Hi.</h1>
-         <p class="center">I am a 4th year Software Engineering student currently</p>
-         <p class="center">attending Cal Poly San Luis Obispo.</p>
-
-         <a name="projects"><br></br></a>
-
-         <!-- PROJECTS -->
-         <h5 class="container blue-grey-text">PROJECTS</h5>
-         <br></br>
-         <div class="container">
-            <!-- POKEBASE ANDROID -->
-            <div class="col s6 m6 l6">
-              <div class="card">
-                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/showcasepokebase.png">
-                 </div>
-                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Pokébase Android Application<i class="material-icons right">more_vert</i></span>
-                    <p><a id="poke" href="https://github.com/tylerbwong/Pokebase-SQLite"><b><i>View on GitHub</i></b></a></p>
-                 </div>
-                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Pokébase Android App<i class="material-icons right">close</i></span>
-                    <i>Apr 2016 - Present</i>
-                    <p>Gotta catch 'em all! Pokébase for Android is an application that allows you to see information about all 721 Pokémon! Using Google Cloud Platform running App Engine with Cloud SQL, I developed this application for an introductory database class along with fellow classmate Brittany Berlanga. Recently localized application using a SQLite database.</p>
-                    <a id="learnproject1" href="pokebase.html"><b><i>Learn more</i></b></a>
-                 </div>
-              </div>
+            <div class="center">
+                <h1>
+                  <span class="title black-text"></span>
+               </h1>
             </div>
-            <!-- TRON -->
-            <div class="col s6 m6 l6">
-              <div class="card">
-                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/showcasetron.png">
-                 </div>
-                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Tron.js<i class="material-icons right">more_vert</i></span>
-                    <p><a id="tron" href="./tron.html"><b><i>Play now!</i></b></a></p>
-                 </div>
-                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Tron.js<i class="material-icons right">close</i></span>
-                    <i>May 2016</i>
-                    <p>A traditional game of tron written in Javascript with HTML canvas! Supports live high scores displayed through Chart.js and a Firebase backend. Putting in the Konami code on this page will bring up a link to play! (hint: up, up, down, down, left, right, left, right, b, a)</p>
-                    <a id="learnproject2" href="tron.html"><b><i>Play now!</i></b></a>
-                 </div>
-              </div>
+            <p>I'm a 4th year Software Engineering student <br> currently attending Cal Poly San Luis Obispo. <br> Thanks for stopping by!</p>
+        </div>
+
+        <br></br>
+        <br></br>
+
+        <!-- SKILLS -->
+        <a name="skills"><br></br>
+        </a>
+        <h5 class="container black-text">Skills</h5>
+        <br></br>
+        <div class="container">
+            <div class="chip">Java</div>
+            <div class="chip">C</div>
+            <div class="chip">Javascript</div>
+            <div class="chip">Python</div>
+            <div class="chip">Swift</div>
+            <div class="chip">Racket</div>
+            <div class="chip">RxJava</div>
+            <div class="chip">REST</div>
+            <div class="chip">Android Development</div>
+            <div class="chip">MVP</div>
+            <div class="chip">iOS Development</div>
+            <div class="chip">MySQL</div>
+            <div class="chip">XML</div>
+            <div class="chip">Git</div>
+            <div class="chip">MVC</div>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">LaTeX</div>
+        </div>
+
+        <br></br>
+        <br></br>
+
+        <!-- PROJECTS -->
+        <a name="projects"><br></br>
+        </a>
+        <h5 class="container black-text">Projects</h5>
+        <br></br>
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <!-- SNAPTION -->
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/snaptionshowcase.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator black-text">
+                                Snaption
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>Snaption is a social Android application for captioning and uploading images with your friends!</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title black-text">
+                                Snaption
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <h7><i>Sept 2016 - Present</i></h5>
+                            <p>
+                                Snaption is a card game produced by Pic me! Games, Inc. For my Senior Capstone project, our goal was to release
+                                a mobile version of the game as a native Android application.
+                            </p>
+                            <p>
+                                The application's backend is a Django Python server hosted on Google Cloud Platform's Compute Engine.
+                                The server also interacts with Google's Cloud SQL and Storage for database storage and image storage.
+                            </p>
+                            <p>
+                                The Android application itself uses the Android Support Library for Material components, Glide
+                                for image loading and caching, RxJava 2 for asynchronous network requests and thread switching,
+                                and Retrofit for a REST API interface. The goal of the application was also to follow a
+                                Model-View-Presenter clean architecture for testability.
+                            </p>
+                            <p>
+                                Through the application, users can log in through either Facebook or Google. Users can view
+                                photos uploaded by other users on a staggered grid, caption them, and upload a photo of their own.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="teal-text" href="https://play.google.com/store/apps/details?id=com.snaptiongame.app">
+                                <b>Download on Google Play</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <!-- CRU CENTRAL COAST -->
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/crushowcase.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator black-text">
+                                Cru Central Coast
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>Cru Central Coast is an Android application for ride-sharing, events, and resources.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title black-text">
+                                Cru Central Coast
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <h7><i>Jan 2017 - Present</i></h5>
+                            <p>
+                                Campus Crusade for Christ Central Coast is a Christian Organization for college students
+                                along the central coast of California. For my Senior Project, my teammate and I worked to
+                                update and refresh the Android application for release.
+                            </p>
+                            <p>
+                                The application's backend is a Node.js server using Keystone.js hosted on Heroku.
+                                The server also interacts with an S3 AWS instance for image storage, and MLabs for a MongoDB
+                                database.
+                            </p>
+                            <p>
+                                The Android application itself uses the Android Support Library for Material components, Picasso
+                                for image loading and caching, RxJava for asynchronous network requests and thread switching,
+                                and Retrofit for a REST API interface.
+                            </p>
+                            <p>
+                                Through the application, users can view upcoming events, request and provide rides, and view
+                                resources, and YouTube videos. There is also support for Leader log-in with administrative
+                                functionality.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="teal-text" href="https://github.com/CruCentralCoast/CruAndroid">
+                                <b>View on GitHub</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- WHODONEDIDIT -->
-            <div class="col s6 m6 l6">
-               <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator" src="images/showcasewhodonedidit.png">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title activator grey-text text-darken-4">Who Done Did It?<i class="material-icons right">more_vert</i></span>
-                     <p><a id="whodonedidit" href="./projects/WhoDoneDidIt_v2.2.jar" download><b><i>Download JAR</i></b></a></p>
-                  </div>
-                  <div class="card-reveal">
-                     <span class="card-title grey-text text-darken-4">Who Done Did It?<i class="material-icons right">close</i></span>
-                     <i>Oct – Dec 2015</i>
-                     <p>This product will enable users to play the "Who Done Did It?" card game through a computer interface that allows offline play as well as server-connected play with up to 5 players. With the continued rise of multiplayer online games, traditional card games have yet to make a shift from playing in-person to playing through a computer interface. This product will allow fans of this traditional card game to play against others online, breaking the barriers of in-person play. As the lead UI designer, implemented a Swing GUI in Java for an online multiplayer game based on the original card game Clue and had a hand in implementation of backend game logic modules in a 6 membered team.</p>
-
-                     <a id="learnproject3" href="whodonedidit.html"><b><i>Learn more</i></b></a>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col s6">
+                    <!-- POKÉBASE -->
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/pokebaseshowcase.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator black-text">
+                                Pokébase
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>Pokébase is an Android application for keeping track of the first 721 Pokémon, items, and more.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title black-text">
+                                Pokébase
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <h7><i>May 2016 - Feb 2017</i></h5>
+                            <p>
+                                Gotta catch 'em all! Pokébase for Android is an application that allows you to see information about the first
+                                721 Pokémon. I developed this application for an introductory database class along with fellow classmate Brittany Berlanga.
+                            </p>
+                            <p>
+                                The initial version of the application was backed by a Google Cloud App Engine using Cloud Endpoints written in Java
+                                and a Google Cloud SQL instance for storing information about Pokémon. The Google provided APIs allowed us to
+                                call server methods to access the database directly from the application.
+                            </p>
+                            <p>
+                                Once the free trial for Google Cloud Platform expired, I migrated the application over to using a local SQLite database
+                                in order to preserve the functionality of the application. This required copying over the database file from the .apk file
+                                to the phone's storage upon launching the application for the first time.
+                            </p>
+                            <p>
+                                The Android application itself uses the Android Support Library for Material components and Glide
+                                for image loading and caching.
+                            </p>
+                            <p>
+                                Users can browse information about the first 721 Pokémon, various moves, items, and types. They can also create teams
+                                of up to six Pokémon, customizing each Pokémon's name, leve, and moveset.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="teal-text" href="https://github.com/tylerbwong/Pokebase-SQLite">
+                                <b>View on GitHub</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <!-- ESCA -->
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/escashowcase.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator black-text">
+                                Esca
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p>Esca is a crowd-sourced iOS application that allowed users to contribute to a map of food deals.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title black-text">
+                                Esca
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <h7><i>Sept 2016 - Dec 2016</i></h5>
+                            <p>
+                                Esca is a crowd-sourced iOS application that allowed users to contribute to a map of food deals.
+                                I developed this iOS application as a group project for my Mobile Application Development course. I worked
+                                with fellow group members Brandon Vo and Brittany Berlanga.
+                            </p>
+                            <p>
+                                Esca is backed by Firebase, Google's BaaS. It uses Firebase's Realtime Database, Storage, and
+                                Authentication features with support for Facebook Login through Facebook's iOS SDK. It is able to
+                                instantiate Firebase listeners to listen directly to the realtime database for changes, so UI elements
+                                update as changes are made.
+                            </p>
+                            <p>
+                                The iOS application was built with Firebase for the backend, SideMenu for the navigation menu, Kingfisher
+                                for asynchronous image loading and caching, and FontAwesome for icons. Apple's MapKit, CoreLocation, and
+                                Background Refresh were also used to provide a location-based updates.
+                            </p>
+                            <p>
+                                Through the application users can log in with Facebook, upload new deals, provide feedback for other user-submitted
+                                deals, and view local deals on a map.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="teal-text" href="https://github.com/tylerbwong/esca">
+                                <b>View on GitHub</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- EPICSLO ANDROID -->
-            <div class="col s6 m6 l6">
-               <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator" src="images/showcaseepicsmall.png">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title activator grey-text text-darken-4">EPIC SLO Android App<i class="material-icons right">more_vert</i></span>
-                     <p><a id="epic" href="https://github.com/tylerbwong/EPICSLO"><b><i>View on GitHub</i></b></a></p>
-                  </div>
-                  <div class="card-reveal">
-                     <span class="card-title grey-text text-darken-4">EPIC SLO Android App<i class="material-icons right">close</i></span>
-                     <i>Apr - May 2016</i>
-                     <p>Win. Build. Send. A ministry based in San Luis Obispo focused on winning students for Christ, building them up based on His word, and sending them out into the field. I developed this application for an on campus ministry EPIC using in Java, to learn Android App Development.</p>
-                     <a id="learnproject4" href="epicapp.html"><b><i>Learn more</i></b></a>
-                  </div>
-               </div>
-            </div>
-         </div>
+        </div>
 
-         <a name="skills"><br></br></a>
+        <br></br>
+        <br></br>
 
-         <!-- LANGUAGES -->
-         <h5 class="container blue-grey-text">LANGUAGES</h5>
-         <br></br>
-         <div class="container">
-            <img class="col" height="96" width="96" src="images/java.png">
-            <img class="col" height="96" width="96" src="images/c.png">
-            <img class="col" height="96" width="96" src="images/html.png">
-            <img class="col" height="96" width="96" src="images/css.png">
-            <img class="col" height="96" width="96" src="images/javascript.png">
-            <img class="col" height="96" width="96" src="images/python.png">
-            <img class="col" height="96" width="96" style="margin-left:15px;" src="images/swift.png">
-         </div>
-
-         <br></br>
-
-         <!-- APPS -->
-         <h5 class="container blue-grey-text">APPLICATIONS</h5>
-         <br></br>
-         <div class="container">
-            <img class="col" height="85" width="85" src="images/intellij.png">
-            <img class="col" height="80" width="100" src="images/sketch.png">
-            <img class="col" height="80" width="80" src="images/android.png">
-         </div>
-
-         <br></br>
-
-         <!-- FIXED ACTION BUTTON -->
-         <div class="fixed-action-btn" style="bottom: 20px; right: 24px;">
-            <a id="button" class="btn-floating btn-large cyan lighten-3">
-               <i class="large material-icons">add</i>
+        <!-- FLOATING ACTION BUTTON -->
+        <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
+            <a id="button" class="btn-floating btn-large">
+                <i class="large material-icons">face</i>
             </a>
             <ul>
-               <li><a id="facebook" href="https://www.facebook.com/tylerbwong" class="btn-floating red lighten-3"><img class="moveimage" height="24" width="24" src="images/facebook.png"/></a></li>
-               <li><a id="instagram" href="https://instagram.com/tylerbwong" class="btn-floating yellow lighten-3"><img class="moveimage" height="24" width="24" src="images/instagram.png"/></a></li>
-               <li><a id="github" href="https://github.com/tylerbwong" class="btn-floating green lighten-3"><img class="moveimage" height="24" width="24" src="images/github.png"/></a></li>
+                <li>
+                    <a href="https://github.com/tylerbwong" class="btn-floating black">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:tbwong3@gmail.com" class="btn-floating grey">
+                        <i class="small material-icons">email</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tylerbwong" class="btn-floating blue">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/tylerbwong" class="btn-floating brown">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
-         </div>
-      </div>
+        </div>
 
-      <!-- SCRIPTS -->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-      <script src="js/color.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/materialize.js"></script>
-      <script src="js/init.js"></script>
-      <script src="js/smoothscroll.js"></script>
-      <script src="js/konami.js"></script>
-      <script src="js/easteregg.js"></script>
-   </body>
+        <footer class="page-footer grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">About</h5>
+                        <p class="white-text">
+                            Hey there! In addition to writing code, I also enjoy Korean BBQ, playing the piano,
+                            Super Smash Bros. Melee, and basketball.
+                        </p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="white-text" href="index.html">Home</a></li>
+                            <li><a class="white-text" href="#skills">Skills</a></li>
+                            <li><a class="white-text" href="#projects">Projects</a></li>
+                            <li><a class="white-text" href="blog.html">Blog</a></li>
+                            <li><a class="white-text" href="files/TylerWongResume.pdf">Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container white-text">
+                    <i class="fa fa-code" aria-hidden="true"></i> by Tyler Wong
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/839b14f82f.js"></script>
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <script type="text/javascript" src="js/title.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+</body>
 
 </html>

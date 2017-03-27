@@ -1,15 +1,15 @@
-html, body {
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   font-family: 'Source Sans Pro', sans-serif;
+html {
+    font-family: 'Cutive Mono';
 }
 
-.moveimage {
-   position: relative;
-   top: 6px;
+.title {
+    padding-left: 70px;
+}
+
+.typed-cursor {
+    opacity: 0;
 }
 
 .rightalign {
-  text-align: right;
+    text-align: right;
 }
