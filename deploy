@@ -5,5 +5,10 @@ git add .
 git commit -m "$commit_message"
 echo "===== Pushing to GitHub ====="
 git push
-echo "===== Deploying client to Firebase ====="
+echo "===== Deploying home to Firebase ====="
+cd home
 firebase deploy
+echo "===== Deploying blog to Firebase ====="
+cd ../blog
+firebase deploy
+cd ..
