@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
         strings: [
             "你好.", "hola.", "안녕.", "hello."
         ],
-        typeSpeed: 0
+        typeSpeed: 0,
+        typeSpeed: 30,
+        loop: true,
+        loopCount: null,
+        backDelay: 1000
     });
 });
