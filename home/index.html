@@ -10,7 +10,7 @@
 
     <!-- TABBAR -->
     <title>Tyler Wong</title>
-    <link rel="icon" href="./images/me.ico">
+    <link rel="icon" href="./images/me2.ico">
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -41,20 +41,20 @@
         <br></br>
 
         <div class="container center">
-            <img height="200" width="200" src="./images/me.png">
+            <img height="200" width="200" src="./images/me2.png">
             <div class="center">
                 <h1>
                   <span class="title black-text"></span>
                </h1>
             </div>
-            <p>I'm a 4th year Software Engineering student <br> currently attending Cal Poly San Luis Obispo. <br> Thanks for stopping by!</p>
+            <p>I'm a <b>Software Engineer</b> working for <b>Tapestry Solutions</b> <br> and recently graduated from <b>Cal Poly San Luis Obispo</b>. <br> Thanks for stopping by!</p>
         </div>
 
         <br></br>
         <br></br>
 
         <!-- SKILLS -->
-        <a name="skills"><br></br>
+        <a id="skills"><br></br>
         </a>
         <h5 class="container black-text">Skills</h5>
         <br></br>
@@ -83,7 +83,7 @@
         <br></br>
 
         <!-- PROJECTS -->
-        <a name="projects"><br></br>
+        <a id="projects"><br></br>
         </a>
         <h5 class="container black-text">Projects</h5>
         <br></br>
@@ -353,7 +353,10 @@
     <script type="text/javascript" src="https://use.fontawesome.com/839b14f82f.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/title.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 
 </html>
