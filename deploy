@@ -8,7 +8,4 @@ git push
 echo "===== Deploying home to Firebase ====="
 cd home
 firebase deploy
-echo "===== Deploying blog to Firebase ====="
-cd ../blog
-firebase deploy
 cd ..
