@@ -8,7 +8,7 @@ const greetings = ["你好!", "¡hola!", "안녕!", "hello!"]
 export default function Header() {
   return (
     <Grid item xs={12}>  
-      <div style={{ textAlign: "center", marginTop: 48 }}>
+      <div style={{ textAlign: "center", marginTop: 148 }}>
         <Grow in={true} timeout={500}>
           <img src={me} width={192} alt="logo" />
         </Grow>

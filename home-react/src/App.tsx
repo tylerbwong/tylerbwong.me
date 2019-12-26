@@ -1,7 +1,6 @@
 import React from 'react';
 import HomeAppBar from './bar/HomeAppBar';
 import Header from './header/Header';
-import Projects from './projects/Projects';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { blue } from '@material-ui/core/colors';
 import { CssBaseline, useMediaQuery } from '@material-ui/core';
@@ -30,7 +29,7 @@ export default function App() {
       <CssBaseline />
       <HomeAppBar isDarkMode={isDarkEnabled} toggleDark={() => setDarkMode(!isDarkEnabled)} />
       <Header />
-      <Projects />
+      {/* Remove for now <Projects /> */}
     </ThemeProvider>
   );
 }
