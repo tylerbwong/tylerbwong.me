@@ -1,4 +1,4 @@
-# tylerbwong.me
+# [tylerbwong.me](https://tylerbwong.me)
 
 [![Actions Status](https://github.com/tylerbwong/tylerbwong.me/workflows/Build/badge.svg)](https://github.com/tylerbwong/tylerbwong.me/actions)
 
