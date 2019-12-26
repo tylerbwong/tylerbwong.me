@@ -1,15 +1,36 @@
 import React from 'react';
-import me from './me.png';
-import './App.css';
+import HomeAppBar from './HomeAppBar';
+import Header from './Header';
+import Projects from './Projects';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { blue } from '@material-ui/core/colors';
+import { CssBaseline, useMediaQuery } from '@material-ui/core';
 
-const App: React.FC = () => {
+export default function App() {
+  const [isDarkEnabled, setDarkMode] = React.useState<boolean>(false);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  const theme = createMuiTheme({
+    palette: {
+      background: {
+        default: isDarkEnabled ? "#424242" : "#FFFFFF"
+      },
+      primary: {
+        main: isDarkEnabled ? "#FFFFFF" : "#000000"
+      },
+      secondary: blue,
+      type: isDarkEnabled ? "dark" : "light",
+    },
+  });
+
+  React.useEffect(() => setDarkMode(prefersDarkMode), [prefersDarkMode])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={me} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <HomeAppBar isDarkMode={isDarkEnabled} toggleDark={() => setDarkMode(!isDarkEnabled)} />
+      <Header />
+      <Projects />
+    </ThemeProvider>
   );
 }
-
-export default App;
