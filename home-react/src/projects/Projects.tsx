@@ -1,7 +1,5 @@
 import React from 'react';
-import stack from './stack.png'
-import allaboard from './allaboard.png'
-import pokebase from './pokebase.png'
+import { projects, Project } from './projects';
 import { 
   Grid, 
   Grow,
@@ -12,34 +10,6 @@ import {
   CardMedia, 
   makeStyles,
 } from '@material-ui/core';
-
-interface Project {
-  name: string;
-  image: any;
-  description: string;
-  link: string;
-}
-
-const projects: Project[] = [
-  {
-    name: "Stack",
-    image: stack,
-    description: "An Android application for viewing StackOverflow posts",
-    link: "https://github.com/tylerbwong/stack",
-  },
-  {
-    name: "AllAboard",
-    image: allaboard,
-    description: "A Kotlin DSL for creating onboarding flows in your Android apps",
-    link: "https://github.com/tylerbwong/AllAboard",
-  },
-  {
-    name: "Pokebase",
-    image: pokebase,
-    description: "Android application that let's you view information on the first 721 Pokémon",
-    link: "https://github.com/tylerbwong/Pokebase",
-  },
-]
 
 const useStyles = makeStyles({
   media: {

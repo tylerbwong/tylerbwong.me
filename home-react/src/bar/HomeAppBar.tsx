@@ -1,13 +1,26 @@
 import React, { ReactElement } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Switch from '@material-ui/core/Switch';
-import { BrightnessHigh, Brightness4, GitHub, LinkedIn, MoreVert } from '@material-ui/icons';
+import {
+  AppBar,
+  IconButton,
+  Fade,
+  Menu,
+  MenuItem,
+  Link,
+  ListItemIcon,
+  ListItemText,
+  Switch,
+  Toolbar,
+  Typography
+} from '@material-ui/core';
+import {
+  Brightness4,
+  BrightnessHigh,
+  GitHub,
+  LinkedIn,
+  MoreVert
+} from '@material-ui/icons';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { Menu, MenuItem, ListItemIcon, ListItemText, Link, MenuProps, withStyles, ListItem, Grow, Fade } from '@material-ui/core';
 
 interface HomeAppBarProps {
   isDarkMode: boolean;
@@ -37,14 +50,8 @@ const useStyles = makeStyles({
 export default function HomeAppBar(props: HomeAppBarProps) {
   const classes = useStyles();
   const [anchor, setAnchor] = React.useState<null | HTMLElement>(null);
-
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchor(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchor(null);
-  };
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => setAnchor(event.currentTarget)
+  const handleClose = () => setAnchor(null)
 
   return (
     <Fade in={true} timeout={2000}>

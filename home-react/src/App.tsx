@@ -1,7 +1,7 @@
 import React from 'react';
-import HomeAppBar from './HomeAppBar';
-import Header from './Header';
-import Projects from './Projects';
+import HomeAppBar from './bar/HomeAppBar';
+import Header from './header/Header';
+import Projects from './projects/Projects';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { blue } from '@material-ui/core/colors';
 import { CssBaseline, useMediaQuery } from '@material-ui/core';
