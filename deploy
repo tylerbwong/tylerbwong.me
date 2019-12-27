@@ -1,11 +1,14 @@
 #!/bin/bash
 commit_message=$1
 
+echo "===== Building Site ====="
+cd home
+npm run build
+cd ..
 git add .
 git commit -m "$commit_message"
 echo "===== Pushing to GitHub ====="
-git push
+git pull --rebase && git push
 echo "===== Deploying home to Firebase ====="
-cd home
 firebase deploy
 cd ..
