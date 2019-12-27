@@ -5,19 +5,24 @@ import Typed from 'react-typed';
 
 const greetings = ["你好!", "¡hola!", "안녕!", "hello!"]
 
-export default function Header() {
+interface HeaderProps {
+  isLoading: boolean;
+  setLoading: Function;
+}
+
+export default function Header(props: HeaderProps) {
   return (
     <Grid item xs={12}>  
       <div style={{ textAlign: "center", marginTop: 148 }}>
-        <Grow in={true} timeout={500}>
-          <img src={me} width={192} alt="logo" />
+        <Grow in={!props.isLoading} timeout={500}>
+          <img src={me} width={192} onLoad={() => props.setLoading(false)} alt="logo" />
         </Grow>
-        <Grow in={true} timeout={1000}>
+        <Grow in={!props.isLoading} timeout={1000}>
           <Typography color="inherit" style={{ marginTop: 16 }} variant="h3">
             <Typed strings={greetings} typeSpeed={60} loop cursorChar="‎" />
           </Typography>
         </Grow>
-        <Grow in={true} timeout={1500}>
+        <Grow in={!props.isLoading} timeout={1500}>
           <div>
             <Typography color="inherit" style={{ marginTop: 16 }} variant="h6">
               I'm a <b>Software Engineer</b> at <b>Credit Karma</b> building <b>Android</b> applications.

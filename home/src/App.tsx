@@ -6,6 +6,7 @@ import { blue } from '@material-ui/core/colors';
 import { CssBaseline, useMediaQuery } from '@material-ui/core';
 
 export default function App() {
+  const [isLoading, setLoading] = React.useState<boolean>(true)
   const [isDarkEnabled, setDarkMode] = React.useState<boolean>(false);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
@@ -28,7 +29,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <HomeAppBar isDarkMode={isDarkEnabled} toggleDark={() => setDarkMode(!isDarkEnabled)} />
-      <Header />
+      <Header isLoading={isLoading} setLoading={setLoading} />
       {/* Remove for now <Projects /> */}
     </ThemeProvider>
   );
