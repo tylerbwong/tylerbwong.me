@@ -11,11 +11,14 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
+
+  const onFinishLoading = () => props.setLoading(false)
+
   return (
     <Grid item xs={12}>  
       <div style={{ textAlign: "center", marginTop: 148 }}>
         <Grow in={!props.isLoading} timeout={500}>
-          <img src={me} width={192} onLoad={() => props.setLoading(false)} alt="logo" />
+          <img src={me} width={192} onLoad={onFinishLoading} onError={onFinishLoading} alt="logo" />
         </Grow>
         <Grow in={!props.isLoading} timeout={1000}>
           <Typography color="inherit" style={{ marginTop: 16 }} variant="h3">
